@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+   <title>Future Releases - Tunes. The Music You're Listening To.</title> <!-- Title of webpage, I have included the name of the page, along with the website name and slogan to make it more professional -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+   <link href="future_releases.css" rel="stylesheet" type="text/css" /> <!-- CSS Stylesheet Link -->
+   <script src="main.js" type="text/javascript"></script> <!-- Javascript File Link -->
+</head> 
+<body id="body"> <!-- I have made a div for different parts of my webpage to make it easier for me to access/change it -->
+	<p id="top"></p> <!-- This Paragraph is used to create a reference to the top of the page --> 
+	
+	<div id="container">
+		<div id="header">
+			<img src="images/tunes.png" alt="Tunes." /> <!-- Header Section where Name of Site appears -->
+		</div>
+		
+		<div id="slogan">
+			Future Releases
+		</div>
+
+		<div id="nav"> <!-- This is the Website Navigation section, where I have used images as links to my other pages. I have not used <br/> line spacing, as they need to be next to each other for the css layout to work -->
+			<a href="index.html"><img src="images/home.png" alt="Home" class="home" /></a>
+			<a href="music_news.html"><img src="images/music_news.png" alt="Music News" class="musicnews" /></a>
+			<a href="videos.html"><img src="images/videos.png" alt="Videos" class="videos" /></a>
+			<a href="newsletter.html"><img src="images/newsletter.png" alt="Newsletter" class="newsletter" /></a>	
+			<a href="live_charts.html"><img src="images/live_charts.png" alt="Live Charts" class="livecharts" /></a>				
+		</div>
+		
+		<div id="introduction"> <!-- Similar to "slogan" div, but added to inform user on page contents before content begins -->
+			Keep up-to-date with all the newest music with Tunes.
+		</div>
+		
+		<div id="singles"> <!-- First of two main contents divs, this one includes Images, lists and nested lists -->
+			<img src="images/singles.png" alt="Singles" class="singles"  /><br/><br/>
+			
+			<img src="images/blowsingle.jpg" alt="BlowSingle" class="blowsingle" />
+			<ul>
+				<li>Ke$ha - Blow
+					<ul>
+						<li>Release Date: 10th April</li>
+						<li>Pop</li>
+					</ul>
+				</li>
+			</ul><br/><br/><br/><br/><br/><br/><br/>
+			
+			<img src="images/bottomsupsingle.jpg" alt="BottomsUpSingle" class="bottomsupsingle" />
+			<ul>
+				<li>Trey Songz - Bottoms Up
+					<ul>
+						<li>Release Date: 8th April</li>
+						<li>Genre: Hip-Hop/Rap</li>
+					</ul>
+				</li>
+			</ul><br/><br/><br/><br/><br/><br/><br/>
+			
+			<img src="images/etsingle.jpg" alt="ETSingle" class="etsingle" />
+			<ul>
+				<li>Katy Perry - E.T
+					<ul>
+						<li>Release Date: 5th April</li>
+						<li>Genre: Pop</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="albums"> <!-- Second of the two main contents divs, this is the same as it includes Images, lists and nested lists -->
+			<img src="images/albums.png" alt="Albums" class="albums" /><br/><br/>
+			<img src="images/chipmunkalbum.jpg" alt="ChipmunkAlbum" class="chipmunkalbum" />
+			<ul>
+				<li>Chipmunk - Transition
+					<ul>
+						<li>Release Date: 18th April</li>
+						<li>Genre: Hip-Hop/Rap</li>
+					</ul>
+				</li>
+			</ul><br/><br/><br/><br/><br/><br/><br/>
+			
+			<img src="images/snoopalbum.jpg" alt="SnoopDoggAlbum" class="snoopdoggalbum" />
+			<ul>
+				<li>Snoop Dogg - Doggumentary
+					<ul>
+						<li>Release Date: 18th April</li>
+						<li>Genre: Hip-Hop/Rap</li>
+					</ul>
+				</li>
+			</ul><br/><br/><br/><br/><br/><br/><br/>
+			
+			<img src="images/katybalbum.jpg" alt="KatyBAlbum" class="katybalbum" />
+			<ul>
+				<li>Katy B - On a Mission
+					<ul>
+						<li>Release Date: 4th April</li>
+						<li>Genre: Pop</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="resizetext"> <!-- The following three divs are the Accessibility section. I have used Javascript to allow users to change the font size, colour and the background colour of the page by clicking images and buttons. I tried to make it as user-friendly as possible -->
+			<p>Resize Text:</p>
+			<img src="images/decrease.png" alt="Decrease" onclick="resizeText(-1);" />
+			<img src="images/increase.png" alt="Increase" onclick="resizeText(+1);" /><br/>
+			<button onclick="resetToDefaultFontSize()">Reset Font Size</button>
+		</div>
+		
+		<div id="textcolour">
+			<p>Change Text Colour:</p>
+			<img src="images/black.png" alt="Black" onclick="changeColor('black');" />
+			<img src="images/blue.png" alt="Blue" onclick="changeColor('blue');" /> 
+			<img src="images/red.png" alt="Red" onclick="changeColor('red');" />
+			<img src="images/green.png" alt="Green" onclick="changeColor('green');" />
+		</div>
+		
+		<div id="backgroundcolour">
+			<p>Change Background Colour:</p>
+			<img src="images/defaultbackground.png" alt="DefaultBackground" onclick="changeBcgColor('#7D9EC0');" />  
+			<img src="images/purple.png" alt="PurpleBackground" onclick="changeBcgColor('#330066');" />  
+			<img src="images/green.png" alt="GreenBackground" onclick="changeBcgColor('green');" />  
+			<img src="images/yellow.png" alt="YellowBackground" onclick="changeBcgColor('yellow');" /><br/>
+		</div>
+		
+		<div id="footer"> <!-- This is the Bottom section of the page and contains a reference link to the paragraph called "top" at the top of the current page. Clicking this link will take the user there -->
+			<p>&copy; Tunes. Created by Jack Gilbert for WSD ;)</p>
+			<p><a href="#top">Back To Top</a></p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+   <title>Tunes. The Music You're Listening To.</title> 
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+   <link href="main.css" rel="stylesheet" type="text/css" /> <!-- CSS Stylesheet Link -->
+   <script src="main.js" type="text/javascript"></script> <!-- Javascript File Link -->
+</head> 
+<body id="body"> <!-- I have made a div for different parts of my webpage to make it easier for me to access/change it -->
+	<p id="top"></p> <!-- This Paragraph is used to create a reference to the top of the page -->
+		
+	<div id="container">
+		<div id="header"> 
+			<img src="images/tunes.png" alt="Tunes." /> <!-- Header Section where Name of Site appears -->
+		</div>
+		
+		<div id="slogan">
+			The Music You're Listening to.
+		</div>
+		
+		<div id="leftnav"> <!-- This is the Website Navigation section, where I have used images as links to my other pages -->
+			<a href="music_news.html"><img src="images/music_news.png" alt="Music News" class="musicnews" /></a><br/><br/>
+			<a href="videos.html"><img src="images/videos.png" alt="New Videos" class="videos" /></a><br/><br/>
+			<a href="future_releases.html"><img src="images/future_releases.png" alt="Future Releases" class="futurereleases" /></a><br/><br/>
+			<a href="newsletter.html"><img src="images/newsletter.png" alt="Newsletter" class="newsletter" /></a><br/><br/>
+			<a href="live_charts.html"><img src="images/live_charts.png" alt="Live Charts" class="livecharts" /></a>				
+		</div>
+		
+		<div id="leftaccess"> <!-- This is the Accessibility section, where I have used Javascript to allow users to change the font size, colour and the background colour of the page. I tried to make it as user-friendly as possible -->
+			<b>Resize Text</b><br/><br/>
+			
+			<img src="images/decrease.png" alt="Decrease" onclick="resizeText(-1);" />
+			<img src="images/increase.png" alt="Increase" onclick="resizeText(+1);" /><br/>
+			<button onclick="resetToDefaultFontSize()">Reset Font Size</button><br/><br/>
+			
+			<b>Change Text Colour</b><br/><br/>
+			
+			<img src="images/black.png" alt="Black" onclick="changeColor('black');" />
+			<img src="images/blue.png" alt="Blue" onclick="changeColor('blue');" /> 
+			<img src="images/red.png" alt="Red" onclick="changeColor('red');" />
+			<img src="images/green.png" alt="Green" onclick="changeColor('green');" /><br/><br/>
+			
+			<b>Change Background Colour</b><br/><br/>
+			
+			<img src="images/defaultbackground.png" alt="DefaultBackground" onclick="changeBcgColor('#7D9EC0');" />  
+			<img src="images/purple.png" alt="PurpleBackground" onclick="changeBcgColor('#330066');" />  
+			<img src="images/green.png" alt="GreenBackground" onclick="changeBcgColor('green');" />  
+			<img src="images/yellow.png" alt="YellowBackground" onclick="changeBcgColor('yellow');" />  
+		</div>
+
+		<div id="content"> <!-- This is the main Content section, where I have used Headings, Images and Paragraphs to create news highlights for the site. I have used alot of <br/>'s as they allow line spacing -->
+			<h1>Welcomes to Tunes.</h1>
+			<h2><em>THE</em> site for current/mainstream music.</h2> <!-- I have used the <em> element to emphasize "THE" -->
+			<hr/>
+			<h2>This Weeks Highlights</h2>
+			
+			<img src="images/adele.jpg" alt="Adele" class="adele" /> <!-- I have created a class for each of the images as this means I can add CSS rules to them -->
+			
+			<br/><h3>Adele Dominates the Charts!</h3>
+			<p>
+				2008 <em>Critics Choice</em> BRIT Award Winner "ADELE" has taken the charts by storm
+				and now sits at number 1 on both UK Singles and Album Charts.<br/><br/>
+				Knocking Nicole Scherzinger's 'Don't Hold Your Breath' off the topspot, the 22 year-old
+				swept in with her latest single 'Someone Like You' and stole the position.<br/><br/>
+				Her second studio album, <em>21</em>, has sat comfortably at number one in the UK Album
+				charts for the past nine weeks, equalling Madonna's 1990 compilation 'The Immaculate Collection'
+				for most consecutive weeks at number one by a solo female artist.
+			</p><br/>
+			
+			<img src="images/justcantgetenough.jpg" alt="Just Can't Get Enough Single" class="bep" />
+			
+			<br/><h3>The Black Eyed Peas Release New Single</h3>
+			<p>
+				The Black Eyed Peas have returned with their new single, enititled <em>'Just Can't Get Enough'</em>.
+				The song is their second single off their sixth studio album <em>'The Beginning'</em>, and has 
+				already hit the number one spot in the US, sitting at number three in the UK.<br/><br/>
+				This follows their first single, <em>'The Time (Dirty Bit)'</em> which reached the number one spot.
+				Will this song be as successful? That remains to be seen.
+			</p><br/><br/>
+			
+			<p>For more Music News, get the lowdown on our <a href="music_news.html">Music News</a> page.</p> <!-- This is a link to the Music News page -->
+		</div>
+
+		<div id="footer"> <!-- This is the Bottom section of the page and contains a reference link to the paragraph called "top" at the top of the current page. Clicking this link will take the user there -->
+			<p>&copy; Tunes. Created by Jack Gilbert for WSD ;)</p>
+			<p><a href="#top">Back To Top</a></p>
+		</div>
+	</div> 
+</body> 
+</html>

@@ -1,0 +1,84 @@
+body{ /*In my CSS code, in some cases I have used the same background colour and border, as some divs are the same as others in their appearance.*/
+background: #7D9EC0; /*This code sets the background colour and the font.*/
+font-family: arial;
+}
+
+a img { 
+border: none; /*This rule makes all images have no border. I have used this because images that have been made into links automatically have a border.*/
+}
+
+#container { /*This sets the rules for the div id "container".*/
+margin: auto; 
+padding: 1em;
+width: 1000px;
+border: 15px solid #36648B;
+}
+
+h1{ /*Makes the heading <h1> in arial black font*/
+font-family: arial black;
+}
+
+#slogan { /*outlines colour and size of text and centres text.*/
+color: #FAFAFA;
+font-size: 40px;
+padding: 5px;
+text-align: center;
+}
+
+#header {
+margin: 0;
+padding: 1em;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+}
+
+#leftnav { /*I have floated this div left, which means it will appear on the left of the page.*/
+float: left;
+clear: both;
+background-color:#FAFAFA;
+padding: 1em;
+border: 2px solid #000000;
+}
+
+.home, .musicnews, .videos, .futurereleases, .livecharts{ /*These rules set the blue lines either side of my navigation links*/
+padding-left: 5px;
+padding-right: 5px;
+border-left: 5px solid #0099CC;
+border-right: 5px solid #0099CC;
+}
+
+#leftaccess { /*Like the div "leftnav", this div floats left too, but goes under the navigation. These rules define the margins and padding in this div.*/
+float: left;
+clear: both;
+background-color:#FAFAFA;
+padding: 1em;
+margin-top: 2em;
+border: 2px solid #000000;
+text-align: center;
+width: 216px;
+}
+
+#content { /*These rules make the div id "content" have 280px of space on the left margin and 1em of padding. Also centres content.*/
+margin-left: 280px;
+padding: 1em;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+text-align: center;
+}
+
+label.infofirstname{ /*This rule gives the form label "infofirstname" a margin on the left of 34px. This is so the form fields are in line with each other.*/
+margin-left: 34px;
+}
+
+label.infosurname{ /*This rule gives the form label "infosurname" a margin on the left of 49px. This is so the form fields are in line with each other.*/
+margin-left: 49px;
+}
+
+#footer {
+background-color:#FAFAFA;
+margin-top: 2em;
+padding-left: 1em;
+border: 2px solid #000000;
+text-align: center;
+font-weight: bold;
+}

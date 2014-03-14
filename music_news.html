@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+   <title>Music News - Tunes. The Music You're Listening To.</title> <!-- Title of webpage, I have included the name of the page, along with the website name and slogan to make it more professional -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+   <link href="music_news.css" rel="stylesheet" type="text/css" /> <!-- CSS Stylesheet Link -->
+   <script src="main.js" type="text/javascript"></script> <!-- Javascript File Link -->
+</head> 
+<body id="body"> <!-- I have made a div for different parts of my webpage to make it easier for me to access/change it -->
+	<p id="top"></p> <!-- This Paragraph is used to create a reference to the top of the page -->
+	
+	<div id="container">
+		<div id="header">
+			<img src="images/tunes.png" alt="Tunes." /> <!-- Header Section where Name of Site appears -->
+		</div>
+		
+		<div id="slogan">
+			Music News
+		</div>
+		
+		<div id="leftnav"> <!-- This is the Website Navigation section, where I have used images as links to my other pages -->
+			<a href="index.html"><img src="images/home.png" alt="Home" class="home" /></a><br/><br/>
+			<a href="videos.html"><img src="images/videos.png" alt="New Videos" class="videos" /></a><br/><br/>
+			<a href="future_releases.html"><img src="images/future_releases.png" alt="Future Releases" class="futurereleases" /></a><br/><br/>
+			<a href="newsletter.html"><img src="images/newsletter.png" alt="Newsletter" class="newsletter" /></a><br/><br/>
+			<a href="live_charts.html"><img src="images/live_charts.png" alt="Live Charts" class="livecharts" /></a>
+		</div>
+
+		<div id="leftaccess"> <!-- This is the Accessibility section, where I have used Javascript to allow users to change the font size, colour and the background colour of the page. I tried to make it as user-friendly as possible -->
+			<b>Resize Text</b><br/><br/>
+			
+			<img src="images/decrease.png" alt="Decrease" onclick="resizeText(-1);" />
+			<img src="images/increase.png" alt="Increase" onclick="resizeText(+1);" /><br/>
+			<button onclick="resetToDefaultFontSize()">Reset Font Size</button><br/><br/>
+			
+			<b>Change Text Colour</b><br/><br/>
+			
+			<img src="images/black.png" alt="Black" onclick="changeColor('black');" />
+			<img src="images/blue.png" alt="Blue" onclick="changeColor('blue');" /> 
+			<img src="images/red.png" alt="Red" onclick="changeColor('red');" />
+			<img src="images/green.png" alt="Green" onclick="changeColor('green');" /><br/><br/>
+			
+			<b>Change Background Colour</b><br/><br/>
+			
+			<img src="images/defaultbackground.png" alt="DefaultBackground" onclick="changeBcgColor('#7D9EC0');" />  
+			<img src="images/purple.png" alt="PurpleBackground" onclick="changeBcgColor('#330066');" />  
+			<img src="images/green.png" alt="GreenBackground" onclick="changeBcgColor('green');" />  
+			<img src="images/yellow.png" alt="YellowBackground" onclick="changeBcgColor('yellow');" />  
+		</div>		
+		
+		<div id="content"> <!-- This is the main Content section, where I have used Headings, Images and Paragraphs to create news stories for the site. I have used alot of <br/>'s as they allow line spacing -->
+			<h1>Latest News from the World of Music</h1>
+			<hr/>
+			<img src="images/chrisbrownalbum.jpeg" alt="ChrisBrownAlbum" class="chrisbrownalbum" /> <!-- I have created a class for each of the images as this means I can add CSS rules to them -->
+			<h2>Chris Browns Drops His New Album!</h2>
+			<p>	
+				Yes, thats right, Chris Brown has officially released his fourth studio album
+				<em>F.A.M.E</em>.<br/><br/>
+				The Album was released on March 18th, and is currently sitting at number six
+				on the Album Charts. It features collaborations from some big names, including Justin Bieber,
+				Ludacris, Lil Wayne, Busta Rhymes and more.<br/><br/>
+				<em>'Yeah 3x'</em>, <em>'Look At Me Now'</em>, and <em>'Beautiful People'</em> are the three 
+				singles from the album so far, with <em>'She Ain't You'</em> becoming the fourth in the near
+				future.<br/><br/>
+				His third album, <em>Grafitti</em> recieved negative reviews from Critics and did not sell as
+				well as his first two albums, most likely triggered by his conviction for assault in 2009. Will
+				<em>F.A.M.E</em> flop too? We will have to wait and see.<br/><br/>
+			</p>
+			
+			<br/>
+			
+			<img src="images/songsforjapan.jpg" alt="SongsForJapan" class="songsforjapan" />
+			<h2>Compilation Album Released in Aid of Japan Tsunami</h2>
+			<p>
+				A compilation album in aid of the Japan Earthquake and Tsunami has been released.<br/><br/>
+				The album, entitled <em>Songs For Japan</em> features 38 of the biggest selling tracks from modern
+				and dated times. Eminem, Rihanna, John Lennon, Katy Perry, Lady GaGa, Beyoncé, P!nk and The Black
+				Eyed Peas are just a few of the big names on the album.<br/><br/>
+				The compilation has already sold 25,000 copies in the United States within its first day, and is predicted 
+				to sell around 75,000 copies within the first week of sale. All proceeds from the album sales are being
+				donated to the Japanese Red Cross Society.
+			</p>
+		</div>
+
+		<div id="footer"> <!-- This is the Bottom section of the page and contains a reference link to the paragraph called "top" at the top of the current page. Clicking this link will take the user there -->
+			<p>&copy; Jack Gilbert ;)</p>
+			<p><a href="#top">Back To Top</a></p>
+		</div>
+	</div> 
+</body> 
+</html>

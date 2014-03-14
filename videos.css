@@ -1,0 +1,126 @@
+body{ /*In my CSS code, in some cases I have used the same background colour and border, as some divs are the same as others in their appearance.*/
+background: #7D9EC0; /*This code sets the background colour and the font.*/
+font-family: arial;
+}
+
+a img { 
+border: none; /*This rule makes all images have no border. I have used this because images that have been made into links automatically have a border.*/
+}
+
+#container { /*This sets the rules for the div id "container".*/
+margin: auto; 
+padding: 1em;
+width: 1000px;
+border: 15px solid #36648B;
+}
+
+#header {
+margin: 0;
+padding: 1em;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+}
+
+h1{
+font-family: arial black;
+}
+
+#slogan { /*outlines colour and size of text and centres text.*/
+color: #FAFAFA;
+font-size: 40px;
+padding: 5px;
+text-align: center;
+}
+
+#nav {
+background-color:#FAFAFA;
+padding: 1em;
+border: 2px solid #000000;
+width: 965px;
+}
+
+.home, .musicnews, .futurereleases, .newsletter{ /*These rules set the blue lines either side of the declared navigation links. Also sets a right margin to separate images.*/
+padding-left: 5px;
+padding-right: 5px;
+border-left: 5px solid #0099CC;
+border-right: 5px solid #0099CC;
+margin-right: 45px;
+}
+
+.livecharts{ /*These rules set the blue lines either side of the navigation link declared. The reason I have separated this link from the rest is because I didnt want it to have a right margin.*/
+padding-left: 5px;
+padding-right: 5px;
+border-left: 5px solid #0099CC;
+border-right: 5px solid #0099CC;
+}
+
+.rebeccablackfriday{ /*This gives the video class "rebeccablackfriday" a left margin of 5em, to separate the videos in the div.*/
+margin-left: 5em;
+}
+
+#popularvideos{
+text-align: center;
+margin-top: 1em;
+padding: 1em;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+}
+
+#favouritevideos{
+text-align: center;
+margin-top: 1em;
+padding: 1em;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+}
+
+p{ /*Makes all paragraphs in bold*/
+font-weight: bold;
+}
+
+#resizetext { /*The following three divs are the Accessibility section. I have decided to make a centred three box layout under the two columns, to make the layout more user-friendly*/
+float: left;
+width: 282px;
+text-align: center;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+padding-bottom: 1em;
+margin-left: 50px;
+margin-top: 1em;
+margin-right: 20px;
+margin-bottom: 1em;
+}
+
+#textcolour { /*I've tried to make each div the same size, so they fit nicely on the page. They are all floated left, and have margins around them to position divs around them.*/
+float: left;
+width: 250px;
+text-align: center;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+padding: 1em;
+padding-bottom: 54px; 
+margin-top: 1em;
+margin-right: 20px;
+margin-bottom: 1em;
+}
+
+#backgroundcolour {
+float: left;
+width: 250px;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+text-align: center;
+padding: 1em;
+padding-bottom: 54px;
+margin-top: 1em;
+margin-bottom: 1em;   
+}
+
+#footer {
+clear: both;
+background-color:#FAFAFA;
+border: 2px solid #000000;
+padding-left: 1em;
+margin-top: 5em;
+text-align: center;
+}

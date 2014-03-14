@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+   <title>Sign Up for the Tunes Newsletter! - Tunes. The Music You're Listening To.</title> <!-- Title of webpage, I have included the name of the page, along with the website name and slogan to make it more professional -->
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+   <link href="newsletter.css" rel="stylesheet" type="text/css" /> <!-- CSS Stylesheet Link -->
+   <script src="main.js" type="text/javascript"></script> <!-- Javascript File Link -->
+</head>
+<body id="body"> <!-- I have made a div for different parts of my webpage to make it easier for me to access/change it -->
+	<p id="top"></p> <!-- This Paragraph is used to create a reference to the top of the page -->
+	
+	<div id="container"> 
+		<div id="header">
+			<img src="images/tunes.png"  alt="Tunes." /> <!-- Header Section where Name of Site appears -->
+		</div>
+		
+		<div id="slogan">
+			Newsletter
+		</div>
+		
+		<div id="leftnav"> <!-- This is the Website Navigation section, where I have used images as links to my other pages -->
+			<a href="index.html"><img src="images/home.png" alt="Home" class="home" /></a><br/><br/>
+			<a href="music_news.html"><img src="images/music_news.png" alt="Music News" class="musicnews" /></a><br/><br/>
+			<a href="videos.html"><img src="images/videos.png" alt="Videos" class="videos" /></a><br/><br/>
+			<a href="future_releases.html"><img src="images/future_releases.png" alt="Future Releases" class="futurereleases" /></a><br/><br/>
+			<a href="live_charts.html"><img src="images/live_charts.png" alt="Live Charts" class="livecharts" /></a>
+		</div>
+		
+		<div id="leftaccess"> <!-- This is the Accessibility section, where I have used Javascript to allow users to change the font size, colour and the background colour of the page. I tried to make it as user-friendly as possible -->
+			<b>Resize Text</b><br/><br/>
+			
+			<img src="images/decrease.png" alt="Decrease" onclick="resizeText(-1);" />
+			<img src="images/increase.png" alt="Increase" onclick="resizeText(+1);" /><br/>
+			<button onclick="resetToDefaultFontSize()">Reset Font Size</button><br/><br/>
+			
+			<b>Change Text Colour</b><br/><br/>
+			
+			<img src="images/black.png" alt="Black" onclick="changeColor('black');" />
+			<img src="images/blue.png" alt="Blue" onclick="changeColor('blue');" /> 
+			<img src="images/red.png" alt="Red" onclick="changeColor('red');" />
+			<img src="images/green.png" alt="Green" onclick="changeColor('green');" /><br/><br/>
+			
+			<b>Change Background Colour</b><br/><br/>
+			
+			<img src="images/defaultbackground.png" alt="DefaultBackground" onclick="changeBcgColor('#7D9EC0');" />  
+			<img src="images/purple.png" alt="PurpleBackground" onclick="changeBcgColor('#330066');" />  
+			<img src="images/green.png" alt="GreenBackground" onclick="changeBcgColor('green');" />  
+			<img src="images/yellow.png" alt="YellowBackground" onclick="changeBcgColor('yellow');" />  
+		</div>
+
+		<div id="content"> <!-- This is the main Content section, where I have used a Form, Headings, Images and Paragraphs to create a user input form for a newsletter signup. -->
+			<h1>Sign Up For the Tunes Newsletter!</h1>
+			
+			<img src="images/rihannacover.jpg" alt="RihannaAlbum" /> <!-- Here I have aligned album artwork side by side to make a collage effect around the form -->
+			<img src="images/tonight.jpg" alt="TonightIm" />
+			<img src="images/bepcover.jpg" alt="BepAlbumEnd" />
+			<img src="images/bornthisway.jpg" alt="LadyGagaSingle" />
+			<img src="images/jessiejalbumcover.jpg" alt="JessieAlbum" />
+			<img src="images/cominghomesingle.jpg" alt="DiddySingle" />
+			
+			<h2>Get all the Latest News about ALL your favourite Tunes, Artists and much, much more!</h2>
+			
+			<form action="">
+				<p>
+					<label class="infofirstname" for="firstname">First Name: </label>
+					<input type="text" name="firstname" /><br/><br/>
+					
+					<label class="infosurname" for="surname">Surname: </label>
+					<input type="text" name="surname" /><br/><br/>
+
+					<label class="infoemail" for="emailaddress">E-mail Address : </label>
+					<input type="text" name="emailaddress" /><br/><br/>
+
+					Select Newsletter Type:
+					
+					<input type="radio" name="ex-1" value="daily" />Daily
+					<input type="radio" name="ex-1" value="weekly" />Weekly
+					<input type="radio" name="ex-1" value="monthly" />Monthly<br/><br/>
+					<input type="submit" value="Submit" name="submitbutton" onclick='msg(form)' /> <!-- When the user has filled out the form and finally clicks this button, I have created a thank you message in a javascript alert which will pop up for the user -->
+					<input type="reset" value="Clear All" /><br/>
+				</p>
+			</form>
+			
+			<p>
+				<img src="images/yeah3x.jpg" alt="ChrisBrownSingle" /> <!-- Here I have aligned album artwork side by side to make a collage effect around the form again -->
+				<img src="images/pinkfriday.jpg" alt="NickiMinajAlbum" />
+				<img src="images/thebeginning.jpg" alt="BepAlbumBeginning" />
+				<img src="images/dontholdyourbreath.jpg" alt="NicoleSingle" />
+				<img src="images/adele21.jpg" alt="AdeleAlbum" />
+				<img src="images/raymondvsraymond.jpeg" alt="UsherAlbum" />
+			</p>
+		</div>
+
+		<div id="footer"> <!-- This is the Bottom section of the page and contains a reference link to the paragraph called "top" at the top of the current page. Clicking this link will take the user there -->
+			<p>&copy; Tunes. Created by Jack Gilbert for WSD ;)</p>
+			<p><a href="#top">Back To Top</a></p>
+		</div>
+	</div>
+</body>
+</html>
